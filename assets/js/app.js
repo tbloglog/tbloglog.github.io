@@ -5,8 +5,8 @@ var canvas = document.getElementById( 'canvas' ),
 		// full screen dimensions
 		cw = window.innerWidth,
 		ch = window.innerHeight,
-    charArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'],
-    maxCharCount = 100,
+    charArr = ['f','r','a','n','c','e','s','c','o','g','u','i','d','i'],
+    maxCharCount = 1000,
     fallingCharArr = [],
     fontSize = 10,
     maxColums = cw/(fontSize);
@@ -31,7 +31,7 @@ var canvas = document.getElementById( 'canvas' ),
     Point.prototype.draw = function(ctx){
 
       this.value = charArr[randomInt(0,charArr.length-1)].toUpperCase();
-      this.speed = randomFloat(1,5);
+      this.speed = randomFloat(0,9);
 
 
       ctx2.fillStyle = "rgba(255,255,255,0.8)";
